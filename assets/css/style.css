@@ -42,6 +42,7 @@ a,a:hover{
 }
 .nav-link {
     color: var(--light-text);
+    text-transform: uppercase;
 }
 .nav-link:hover {
     color: var(--primary-color);
