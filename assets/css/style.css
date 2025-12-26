@@ -1,4 +1,3 @@
-
 /* common css starts  */
 :root{
     --primary-color:#02918b;
@@ -49,6 +48,15 @@ a,a:hover{
 }
 #mainmenu {
     padding: 20px 0;
+}
+nav .logo a{
+    font-size: 28px;
+    color: var(--light-text);
+    font-family: 'Courier New', Courier, monospace;
+    transition: .3s;
+}
+nav .logo a:hover{
+    color: white;
 }
 /* main menu css ends  */
 /* banner section starts */
