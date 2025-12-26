@@ -1,0 +1,359 @@
+
+/* common css starts  */
+:root{
+    --primary-color:#02918b;
+    --secondary-color:#7e8276;
+    --light-text:#fff;
+    --dark-text:#0b1016;
+    --primary-font:
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+h1,h2,h3,h4,h5,h6,
+ul,ol
+span,
+small{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+/* common css ends  */
+/* main menu css starts  */
+.navbar {
+  background: #1A1A1A;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.5s ease-in-out;
+  font-family:"Poppins", sans-serif;
+}
+.navbar.scrolled {
+  background: rgba(26, 26, 26, 0.9);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transform: translateY(12px);
+}
+.nav-link {
+    color: var(--light-text);
+}
+.nav-link:hover {
+    color: var(--primary-color);
+}
+#mainmenu {
+    padding: 20px 0;
+}
+/* main menu css ends  */
+/* banner section starts */
+#banner{
+    font-family: Castoro, serif;
+    font-size: 62px;
+    color: #141414;
+    background: #ECEEEC;
+    position: relative;
+
+}
+#banner a{
+    color: var(--light-text);
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    width: 200px;
+    height: 70px;
+    display: inline-block;
+    background: #141414;
+    text-align: center;
+    line-height: 70px;
+    transition: .2s;
+    border: 2px solid #000;
+    text-transform: uppercase;
+}
+#banner a.getInTouch{
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+}
+#banner a.getInTouch:hover{
+    background: #000;
+    color: white;
+}
+#banner a:hover{
+    background: orangered;
+    color: var(--light-text);
+}
+#banner h1{
+    font-size: 66px;
+}
+#banner h6{
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+#banner .banner1{
+    padding: 100px 0;
+}
+#banner .banner2 .banner_img{
+    position: absolute;
+    inset: 0 0 0 50%;
+}
+#banner .banner2 .banner_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+/* banner section ends */
+/* about me section starts */
+#about {
+    margin: 50px 0;
+}
+.part_1{
+margin: 100px 0;
+}
+#about h2 {
+    font-size: 36px;
+    color: var(--dark-text);
+    margin-bottom: 20px;
+}
+#about h3{
+    font-size: 50px;
+    color: var(--dark-text);
+    margin-bottom: 45px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#about .about_text {
+    font-size: 24px;
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+#about .about_details {
+    margin-top: 30px;
+}
+#about .about_details ul li{
+    margin-bottom:20px ;
+}
+#about .about_details h4 {
+    font-size: 27px;
+    font-family: Castoro, serif;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    position: relative;
+}
+#about .about_details h4::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 27px;
+    background: orangered;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#about .about_details p{
+    font-family: publicesans, sans-serif;
+    font-size: 20px;
+    color: var(--dark-text);
+    margin: 0;
+    line-height: 1.6;
+    font-weight: 400;
+}
+#about .about_details span {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+#about .part_2 .overlay_o{
+    position: relative;
+}
+#about .part_2 .overlay_o:hover .overlay{
+    transform: scaleY(1);
+    transform-origin: bottom left;
+    transition: .5s;
+    cursor: pointer;
+}
+#about .overlay{
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    inset: 0;
+    transform: scaleY(0);
+    height: 570px;
+}
+#about .overlay .overlay-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+}
+#about .overlay .overlay-content h4{
+    color: #fff;
+    font-size: 20px;
+}
+#about .overlay .overlay-content p{
+    color: #575656;
+    font: 10px;
+}
+/* about me section ends */
+/* clients review section starts */
+#clients_review{
+    padding: 50px 0;
+    margin: 50px 0;
+}
+#clients_review h2{
+    text-align: center;
+    margin: 50px;
+}
+#clients_review .clients_says .clients_details{
+    display: flex;
+    flex-wrap: wrap;
+}
+#clients_review .clients_says .clients_details cite{
+    margin-left: 20px;
+}
+#clients_review .clients_says .clients_details img{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    outline: none;
+    top: 0;
+    left: 0;
+}
+#clients_review .clients_says .clients_details strong {
+    display: block;
+    font-size: 20px;
+    color: var(--dark-text);
+    margin-top: 10px;
+}
+#clients_review .clients_says .clients_details{
+    margin-bottom: 25px;
+}
+#clients_review .clients_talkings{
+    color: #0b1016;
+    font-size: 22px;
+}
+/* clients review section ends */
+/* numbers section starts here */
+#numbers{
+    background: #ECEEEC;
+    padding: 50px 0;
+}
+#numbers .happy_numbers{
+    font-size: 80px;
+    font-weight: bold;
+}
+#numbers .happy_name{
+    margin-bottom: 40px;
+}
+#numbers .happy_description{
+    color: #7e8276;
+    font-size: 20px;
+}
+/* numbers section ends here */
+/* findme section starts here */
+#findme{
+    padding: 100px 0;
+    background: #1A1A1A;
+}
+#findme .findme_container::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #747373;
+    margin-top: 30px;
+}
+#findme h3{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 40px;
+}
+#findme .tag_p{
+    font-size: 20px;
+    color: #747373;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+#findme h5{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+#findme a{
+    color: #747373;
+    transition: .5s;
+}
+#findme a:hover{
+    color:#fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#findme ul li{
+    margin-bottom: 10px;
+}
+#findme .buttons{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#findme .button_1{
+    width: 100%;
+    color: #fff;
+    background: #c24802;
+    padding: 20px 0;
+    border-radius: none;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+    transform: translateY(0);
+    font-size: 20px;
+}
+#findme .button_1:hover{
+    background: #1A1A1A;
+    transform: translateY(-5px);
+    border: 1px solid #fff;
+}
+#findme .button_2{
+    width: 100%;
+    color: #fff;
+    background: #1A1A1A;
+    padding: 20px 0;
+    border-radius: none;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+    transform: translateY(0);
+    font-size: 20px;
+    border: 1px solid #fff;
+}
+#findme .button_2:hover{
+    background: #ffffff;
+    transform: translateY(-5px);
+    color: #000000;
+}
+
+#findme .socialicons i{
+    color: #747373;
+    font-size: 24px;
+    transition: .5s;
+    padding-right: 5px;
+    margin-top: 30px;
+    transform: translateY(0);
+}
+#findme .socialicons i:hover{
+    color: #c24802;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+#findme .footer_text{
+    color: #747373;
+    font-size: 18px;
+    margin-top: 30px;
+}
+/* findme section ends here */
