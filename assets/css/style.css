@@ -209,6 +209,55 @@ margin: 100px 0;
     font: 10px;
 }
 /* about me section ends */
+/* project section css starts here */
+#project_section{
+    position: relative;
+}
+#project_section .slick_sl img{
+    width: 100%;
+    height: 300px;
+    padding-right: 15px;
+}
+.leftArrowBtn,
+.rightArrowBtn{
+    position: absolute;
+    top: 57%;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+    cursor: pointer;
+}
+.leftArrowBtn{
+    left: 78px;
+}
+.rightArrowBtn{
+    right: 88px;
+}
+.dots_design{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 10px;
+}
+.dots_design button{
+    width: 8px;
+    height: 11px;
+    border-radius: 50px;
+    background: #1A1A1A;
+    color: transparent;
+    border:none;
+    transition: .3s;
+}
+.dots_design .slick-active button{
+    width: 25px;
+    background:#3F51B5;
+}
+/* project section css ends here */
 /* clients review section starts */
 #clients_review{
     padding: 50px 0;
