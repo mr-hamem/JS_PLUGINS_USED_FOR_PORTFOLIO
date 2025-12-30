@@ -25,12 +25,11 @@ $(document).ready(function () {
 // slick slider js ends here
 // typed js starts 
 var typed = new Typed('#element', {
-      strings: ['high-converting', 'modern websites'],
+      strings: ['high-converting','modern websites'],
       typeSpeed: 150,
     });
 // typed js ends
 // sweetalert starts here
-
 Swal.fire({
   title: 'Page Loading Successfull',
   icon: 'success',
