@@ -1,25 +1,13 @@
-// windows smooth scroll js start here
-window.addEventListener("scroll", function () {
-  const navbar = document.querySelector(".navbar");
-  const bannerHeight = document.querySelector("#banner").offsetHeight;
-
-  if (window.scrollY > bannerHeight - 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-});
-// windows smooth scroll js ends here
 // slick slider js starts here
 $(document).ready(function () {
   $('.your-class').slick({
     slidesToShow: 2, 
     autoplay: true,
     slidesToScroll: 2,
-    autoplaySpeed: 1000000,
+    autoplaySpeed: 2000,
     arrows: false,
     dots: true,
-    dotsClass: 'dots_design'
+    dotsClass: 'dots_design',
   });
 });
 // slick slider js ends here
@@ -30,11 +18,71 @@ var typed = new Typed('#element', {
     });
 // typed js ends
 // sweetalert starts here
-Swal.fire({
-  title: 'Page Loading Successfull',
-  icon: 'success',
-  timer: 10000,
-  timerProgressBar: true,
-  showConfirmButton: true,
+let clickToShowPop0 = document.querySelector(`.part_2 .overlayClick0`);
+let clickToShowPop1 = document.querySelector(`.part_2 .overlayClick1`);
+let clickToShowPop2 = document.querySelector(`.part_2 .overlayClick2`);
+let clickToShowPop3 = document.querySelector(`.part_2 .overlayClick3`);
+let clickToShowPop4 = document.querySelector(`.part_2 .overlayClick4`);
+let clickToShowPop5 = document.querySelector(`.part_2 .overlayClick5`);
+clickToShowPop0.addEventListener(`click`, function () { 
+  Swal.fire({
+  title: "Sweet!",
+  text: "Modal with a custom image.",
+  imageUrl: "https://themewagon.github.io/Hudson/images/folio/gallery/g-lamp.jpg",
+  imageWidth: 400,
+  imageHeight: 300,
+  imageAlt: "Custom image"
 });
+})
+clickToShowPop1.addEventListener(`click`, function () { 
+  Swal.fire({
+  title: "Sweet!",
+  text: "Modal with a custom image.",
+  imageUrl: "https://themewagon.github.io/Hudson/images/folio/woodcraft.jpg",
+  imageWidth: 400,
+  imageHeight: 300,
+  imageAlt: "Custom image"
+});
+})
+clickToShowPop2.addEventListener(`click`, function () { 
+  Swal.fire({
+  title: "Sweet!",
+  text: "Modal with a custom image.",
+  imageUrl: "https://themewagon.github.io/Hudson/images/folio/tropical.jpg",
+  imageWidth: 400,
+  imageHeight: 300,
+  imageAlt: "Custom image"
+});
+})
+clickToShowPop3.addEventListener(`click`, function () { 
+  Swal.fire({
+  title: "Sweet!",
+  text: "Modal with a custom image.",
+  imageUrl: "https://themewagon.github.io/Hudson/images/folio/grayscale.jpg",
+  imageWidth: 400,
+  imageHeight: 400,
+  imageAlt: "Custom image"
+});
+})
+clickToShowPop4.addEventListener(`click`, function () { 
+  Swal.fire({
+  title: "Sweet!",
+  text: "Modal with a custom image.",
+  imageUrl: "https://themewagon.github.io/Hudson/images/folio/caffeine_and_tulips.jpg",
+  imageWidth: 400,
+  imageHeight: 400,
+  imageAlt: "Custom image"
+});
+})
+clickToShowPop5.addEventListener(`click`, function () { 
+  Swal.fire({
+    title: "Sweet!",
+    text: "Modal with a custom image.",
+    // imageUrl: "../img/lamp.jpg",
+  imageUrl: "https://themewagon.github.io/Hudson/images/folio/gallery/g-lamp.jpg",
+  imageWidth: 400,
+  imageHeight: 300,
+  imageAlt: "Custom image"
+});
+})
 // sweetalert ends here
